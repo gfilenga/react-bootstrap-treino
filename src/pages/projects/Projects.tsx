@@ -5,7 +5,7 @@ import { Repositories } from './Styles';
 interface Repository {
   id: number;
   name: string;
-  description: string;
+  html_url: string;
   owner: {
     avatar_url: string;
     login: string;
@@ -21,10 +21,7 @@ function Projects() {
       .then(response => {
         console.log(response.data);
         const repositoriesReturned = response.data;
-
-        let repositories2: Repository[] = repositoriesReturned;
-
-        setRepositories(repositories2);
+        setRepositories(repositoriesReturned);
       });
   }, [])
 
@@ -32,7 +29,7 @@ function Projects() {
     <Repositories>
       {repositories.map(repository => (
         <a
-          href="teste"
+          href={repository.html_url}
           key={repository.id}
         >
           <img
@@ -41,7 +38,7 @@ function Projects() {
           />
           <div>
             <strong>{repository.name}</strong>
-            <p>{repository.description}</p>
+            <p>{repository.language}</p>
           </div>
         </a>
       ))}
