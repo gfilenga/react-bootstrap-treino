@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import api from '../../services/api';
+import { FiChevronRight } from 'react-icons/fi';
 import { Repositories } from './Styles';
+
 
 interface Repository {
   id: number;
@@ -40,6 +42,8 @@ function Projects() {
             <strong>{repository.name}</strong>
             <p>{repository.language}</p>
           </div>
+
+          <FiChevronRight size={20} />
         </a>
       ))}
     </Repositories>

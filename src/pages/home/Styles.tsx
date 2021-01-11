@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const VideoBg = styled.video`
     width: 100%;
-    height: 100%;
+    height: 100vh;
     -o-object-fit: cover;
     object-fit: cover;
     background: #343A40;
@@ -15,7 +15,7 @@ export const VideoContainer = styled.div`
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     overflow: hidden;
 `;
 
@@ -25,9 +25,10 @@ export const Container = styled.div`
     justify-content: center;
     align-items: center;
     padding: 0 30px;
-    height: 100%;
+    height: 100vh;
     position: relative;
     z-index: 1;
+    overflow: hidden;
 `;
 
 export const ContentContainer = styled.div`

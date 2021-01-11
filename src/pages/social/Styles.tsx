@@ -11,7 +11,7 @@ export const Container = styled.div`
 `;
 
 export const ImgContainer = styled.div`
-    padding-right: 220px;
+    padding-right: 10%;
     color: #f9f9f9;
     background:'#f9f9f9';
 `;
