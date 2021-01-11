@@ -7,7 +7,7 @@ function Home() {
     <>
       <Container>
         <VideoContainer>
-          <VideoBg autoPlay loop muted >
+          <VideoBg playsInline autoPlay loop muted >
             <source src={Video} type='video/mp4' />
           </VideoBg>
         </VideoContainer>
