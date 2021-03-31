@@ -29,7 +29,7 @@ function NavegationMenu() {
             <Nav.Link href="#projects">Repositórios</Nav.Link>
           </Nav>
 
-          <a target="_blank" rel="noreferrer" href="https://drive.google.com/file/d/1912kTmbBmfddn0mYhXJTFVUwk5tMaMCJ/view?usp=sharing">
+          <a target="_blank" rel="noreferrer" href="https://drive.google.com/file/d/1pKp_fLo9icPxvp9wiTwsbKt9iR-srKn7/view?usp=sharing">
             <Button variant="outline-success">Download - cv</Button>
           </a>
         </Navbar.Collapse>
